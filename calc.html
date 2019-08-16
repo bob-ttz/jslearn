@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Калькулятор</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+    <div class="logo">
+        Калькулятор
+    </div>
+    <div class="title">
+        Ипотечный калькулятор
+    </div>
+    <div class="main">
+        <div class="data">
+            <div>
+                <div class="choose-value">Ежемесячный платеж</div>
+                <input class="value-item" type="text" id="monthly_pay" value="30000"><span class="b-sub">руб.</span>
+                <div class="choose-value">Срок кредита</div>
+                <input class="value-item" type="text" id="credit_term" value="120"><span class="b-sub">мес</span>
+                <div class="choose-value">Процентная ставка</div>
+                <input class="value-item" type="text" id="int-rate" value="10"><span class="b-sub">%</span>
+                <div class="choose-value">Первоначальный взнос</div>
+                <input class="value-item" type="text" id="init-fee" value="100000"><span class="b-sub">руб.</span>
+                <div class="choose-value">Ежемесячный доход</div>
+			    <input class="value-item" type="text" id="monthly_income" value="50000"><span class="b-sub">руб.</span>
+            </div>
+            <div class="open">
+                <button class="start" id="start">Начать расчет</button>
+            </div>
+        </div>
+        <div class="result"></div>
+        <div class="logs"><span class = "logo">Логи</span><table></table></div>
+    </div>
+</div>
+    <script src="calc.js"></script>
+</body>
+</html>
